@@ -1,0 +1,12 @@
+name = guber_image_styles
+core = 7.x
+package = Features
+dependencies[] = image
+features[features_api][] = api:1
+features[image][] = a4-portrait
+features[image][] = gallery_thumb
+features[image][] = w1000
+features[image][] = w120x90
+features[image][] = w120x90landscape
+features[image][] = w120x90portrait
+features[image][] = w250x250

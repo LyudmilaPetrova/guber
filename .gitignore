@@ -1,3 +1,5 @@
+# We need only guber.make and /profiles/guber/*
+
 sites/default/files
 sites/default/private
 sites/default/settings.php
@@ -16,17 +18,20 @@ sites/all/modules/README.txt
 sites/all/themes/README.txt
 .htaccess
 
-#for non core developer
-#only include "sites" folder without exclusions before
+authorize.php
 cron.php
 index.php
 install.php
 update.php
 xmlrpc.php
+web.config
 /includes
 /misc
-/modules     
-/profiles
+/modules
+/profiles/minimal
+/profiles/standard
+/profiles/testing
 /scripts
+/sites
 /themes
 

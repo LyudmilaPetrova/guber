@@ -1,0 +1,8 @@
+name = guber_user_roles
+core = 7.x
+package = Features
+dependencies[] = features
+features[features_api][] = api:1
+features[user_role][] = administrator
+features[user_role][] = moderator
+features[user_role][] = redaktor

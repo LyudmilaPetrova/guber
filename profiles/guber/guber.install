@@ -1,0 +1,26 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the standard install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function guber_install() {
+  // Add text formats.
+  include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
+  standard_install();
+  // Change enable and change default theme
+//  theme_enable(array('sky'));
+//  variable_set('theme_default', 'sky');
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+  
+}
+
+//include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install';
+//  minimal_install();

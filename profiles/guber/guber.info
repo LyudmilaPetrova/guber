@@ -1,0 +1,117 @@
+name = Standard
+description = Install with commonly used features pre-configured.
+version = VERSION
+core = 7.x
+
+; Core
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = php
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = toolbar
+dependencies[] = translation
+dependencies[] = update
+dependencies[] = user
+dependencies[] = dblog
+dependencies[] = overlay
+dependencies[] = syslog
+; Webform
+dependencies[] = webform
+; Other
+dependencies[] = block_titlelink
+dependencies[] = colorbox
+dependencies[] = conditional_styles
+dependencies[] = crumbs
+dependencies[] = entity
+dependencies[] = entity_token
+
+dependencies[] = less
+dependencies[] = libraries
+
+dependencies[] = menu_block
+
+dependencies[] = taxonomy_display
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = pathauto
+
+; Chaos tool suite
+dependencies[] = ctools
+; Media
+dependencies[] = file_entity
+dependencies[] = imagecache_actions
+dependencies[] = imagecache_canvasactions
+dependencies[] = imce
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = media_youtube
+
+; User interface
+dependencies[] = imce_wysiwyg
+dependencies[] = wysiwyg
+; Multilingual
+dependencies[] = l10n_update
+; Fields
+dependencies[] = link
+dependencies[] = nodereference_url
+dependencies[] = node_reference
+dependencies[] = references
+; Administration
+dependencies[] = menu_expanded
+; Meta tags (quick)
+dependencies[] = metatags_quick
+dependencies[] = metatags_quick_extra
+; SEO
+dependencies[] = page_title
+; Input filters
+dependencies[] = pathologic
+; Printer, email and PDF versions
+dependencies[] = print
+
+; Mail
+dependencies[] = smtp
+
+; Views
+dependencies[] = views_ui
+dependencies[] = views
+; Features
+dependencies[] = features
+
+; Custom
+;dependencies[] = fix
+;dependencies[] = fix_comments
+;dependencies[] = placeholder
+;dependencies[] = news
+;dependencies[] = map
+
+; Features
+dependencies[] = guber_image_styles
+dependencies[] = guber_text_formats
+dependencies[] = guber_content_types
+dependencies[] = guber_user_roles
+dependencies[] = guber_user_permissions
+dependencies[] = guber_views
+
+
+

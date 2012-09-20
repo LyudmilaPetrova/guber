@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the guber_content_types feature.
+ */
+
+include_once 'guber_content_types.features.inc';
