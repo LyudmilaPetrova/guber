@@ -110,4 +110,6 @@ projects[base3][download][url] = "git://github.com/LyudmilaPetrova/base3.git"
 projects[base3][type] = "theme"
 
 ; Guber installation profile
-; TODO
+projects[guber][type] = profile
+projects[guber][download][type] = git
+projects[guber][download][url] = git://github.com/LyudmilaPetrova/guber.git
