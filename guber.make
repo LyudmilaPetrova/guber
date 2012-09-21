@@ -40,7 +40,7 @@ projects[] = "media"
 projects[] = "media_youtube"
 projects[] = "features"
 
-; Pathed modules and special versions
+; Pathed contributed modules and special versions
 
 projects[l10n_update][version] = 1.x-dev
 
@@ -48,74 +48,66 @@ projects[less][type] = "module"
 projects[less][download][type] = git
 projects[less][download][url] = git://github.com/LyudmilaPetrova/less.git
 
-
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; projects[fix_comments][download][type] = ""
-; projects[fix_comments][download][url] = ""
-; projects[fix_comments][type] = "module"
-
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; projects[map][download][type] = ""
-; projects[map][download][url] = ""
-; projects[map][type] = "module"
-
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; projects[news][download][type] = ""
-; projects[news][download][url] = ""
-; projects[news][type] = "module"
-
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; projects[placeholder][download][type] = ""
-; projects[placeholder][download][url] = ""
-; projects[placeholder][type] = "module"
-
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; projects[printpluspdf][download][type] = ""
-; projects[printpluspdf][download][url] = ""
-; projects[printpluspdf][type] = "module"
-
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; projects[skin][download][type] = ""
-; projects[skin][download][url] = ""
-; projects[skin][type] = "module"
-
-; Themes
-projects[base3][download][type] = "git"
-projects[base3][download][url] = "git://github.com/LyudmilaPetrova/base3.git"
-projects[base3][type] = "theme"
-
 ; Libraries
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; ORIGINAL
-; libraries[lessphp][download][type] = "get"
-; libraries[lessphp][download][url] = "http://leafo.net/lessphp/src/lessphp-0.3.8.tar.gz"
-; libraries[lessphp][directory_name] = "lessphp"
-; libraries[lessphp][type] = "library"
-; WE NEED PATCHED!!!
+
+; WE NEED PATCHED LESSPHP
 libraries[lessphp][download][type] = "get"
 libraries[lessphp][download][url] = "https://nodeload.github.com/Nodge/lessphp/tarball/master"
 libraries[lessphp][directory_name] = "lessphp"
 libraries[lessphp][type] = "library"
 
-
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
 libraries[colorbox][download][type] = "get"
 libraries[colorbox][download][url] = "http://www.jacklmoore.com/colorbox/colorbox.zip"
 libraries[colorbox][directory_name] = "colorbox"
 libraries[colorbox][type] = "library"
 
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
 libraries[tinymce][download][type] = "get"
 libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.5.6_jquery.zip"
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][type] = "library"
 
+; Custom modules
+
+projects[fix][subdir] = "custom"
+projects[fix][download][type] = "git"
+projects[fix][download][url] = "git://github.com/LyudmilaPetrova/fix.git"
+projects[fix][type] = "module"
+
+projects[fix_comments][subdir] = "custom"
+projects[fix_comments][download][type] = "git"
+projects[fix_comments][download][url] = "git://github.com/LyudmilaPetrova/fix_comments.git"
+projects[fix_comments][type] = "module"
+
+projects[fix_search_form][subdir] = "custom"
+projects[fix_search_form][download][type] = "git"
+projects[fix_search_form][download][url] = "git://github.com/LyudmilaPetrova/fix_search_form.git"
+projects[fix_search_form][type] = "module"
+
+projects[placeholder][subdir] = "custom"
+projects[placeholder][download][type] = "git"
+projects[placeholder][download][url] = "git://github.com/LyudmilaPetrova/placeholder.git"
+projects[placeholder][type] = "module"
+
+projects[domain_theme_switcher][subdir] = "custom"
+projects[domain_theme_switcher][download][type] = "git"
+projects[domain_theme_switcher][download][url] = "git://github.com/LyudmilaPetrova/domain_theme_switcher.git"
+projects[domain_theme_switcher][type] = "module"
+
+projects[yasearch][subdir] = "custom"
+projects[yasearch][download][type] = "git"
+projects[yasearch][download][url] = "git://github.com/LyudmilaPetrova/yasearch.git"
+projects[yasearch][type] = "module"
+
+projects[ie_warning][subdir] = "custom"
+projects[ie_warning][download][type] = "git"
+projects[ie_warning][download][url] = "git://github.com/LyudmilaPetrova/ie_warning.git"
+projects[ie_warning][type] = "module"
+
+; Custom theme
+
+projects[base3][download][type] = "git"
+projects[base3][download][url] = "git://github.com/LyudmilaPetrova/base3.git"
+projects[base3][type] = "theme"
+
+; Guber installation profile
+; TODO
