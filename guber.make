@@ -3,7 +3,10 @@ core = 7.x
 
 api = 2
 
+projects[] = "drupal" 
+
 ; Modules
+
 projects[] = "block_titlelink"
 projects[] = "ctools"
 projects[] = "colorbox"
@@ -12,8 +15,6 @@ projects[] = "filefield_paths"
 projects[] = "imagecache_actions"
 projects[] = "imce"
 projects[] = "imce_wysiwyg"
-
-projects[] = "less"
 projects[] = "libraries"
 projects[] = "link"
 projects[] = "menu_block"
@@ -39,19 +40,14 @@ projects[] = "media"
 projects[] = "media_youtube"
 projects[] = "features"
 
+; Pathed modules and special versions
+
 projects[l10n_update][version] = 1.x-dev
 
+projects[less][type] = "module"
+projects[less][download][type] = git
+projects[less][download][url] = git://github.com/LyudmilaPetrova/less.git
 
-
-
-; Themes
-; projects[] = "twitter_bootstrap"
-; Modules
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; projects[fix][download][type] = ""
-; projects[fix][download][url] = ""
-; projects[fix][type] = "module"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
@@ -90,25 +86,24 @@ projects[l10n_update][version] = 1.x-dev
 ; projects[skin][type] = "module"
 
 ; Themes
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; projects[base2][download][type] = ""
-; projects[base2][download][url] = ""
-; projects[base2][type] = "theme"
-
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-; projects[dao][download][type] = ""
-; projects[dao][download][url] = ""
-; projects[dao][type] = "theme"
+projects[base3][download][type] = "git"
+projects[base3][download][url] = "git://github.com/LyudmilaPetrova/base3.git"
+projects[base3][type] = "theme"
 
 ; Libraries
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
+; ORIGINAL
+; libraries[lessphp][download][type] = "get"
+; libraries[lessphp][download][url] = "http://leafo.net/lessphp/src/lessphp-0.3.8.tar.gz"
+; libraries[lessphp][directory_name] = "lessphp"
+; libraries[lessphp][type] = "library"
+; WE NEED PATCHED!!!
 libraries[lessphp][download][type] = "get"
-libraries[lessphp][download][url] = "http://leafo.net/lessphp/src/lessphp-0.3.8.tar.gz"
+libraries[lessphp][download][url] = "https://nodeload.github.com/Nodge/lessphp/tarball/master"
 libraries[lessphp][directory_name] = "lessphp"
 libraries[lessphp][type] = "library"
+
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
