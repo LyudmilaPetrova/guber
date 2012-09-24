@@ -12,13 +12,25 @@
  * @see system_install()
  */
 function guber_install() {
-  // Add text formats.
-  include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
-  standard_install();
-  // Change enable and change default theme
-//  theme_enable(array('sky'));
-//  variable_set('theme_default', 'sky');
-  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+  $inc_path = DRUPAL_ROOT . '/profiles/guber/config/';
+  
+  include_once $inc_path . 'text_formats.inc.php';
+  _text_formats_config();
+
+  include_once $inc_path . 'wysiwyg.inc.php';
+  _wysiwyg_config();
+  
+  include_once $inc_path . 'theme.inc.php';
+  _theme_config();
+  
+  include_once $inc_path . 'blocks.inc.php';
+  _blocks_config();
+  
+  include_once $inc_path . 'node_type_page.inc.php';
+  _node_type_page_config();
+  
+  include_once $inc_path . 'users.inc.php';
+  _users_config();
   
 }
 
