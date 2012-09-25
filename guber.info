@@ -119,7 +119,7 @@ dependencies[] = strongarm
 ; dependencies[] = guber_user_roles
 ; dependencies[] = guber_user_permissions
 ; dependencies[] = guber_views
-dependencies[] = guber_benners
+dependencies[] = guber_banners
 
 
 
