@@ -98,6 +98,13 @@ dependencies[] = views
 ; Features
 dependencies[] = features
 
+; Node Export
+dependencies[] = node_export
+dependencies[] = uuid
+dependencies[] = services
+dependencies[] = strongarm
+
+
 ; Custom
 ;dependencies[] = fix
 ;dependencies[] = fix_comments
@@ -106,12 +113,13 @@ dependencies[] = features
 ;dependencies[] = map
 
 ; Features
-dependencies[] = guber_image_styles
-dependencies[] = guber_text_formats
-dependencies[] = guber_content_types
-dependencies[] = guber_user_roles
-dependencies[] = guber_user_permissions
-dependencies[] = guber_views
+; dependencies[] = guber_image_styles
+; dependencies[] = guber_text_formats
+; dependencies[] = guber_content_types
+; dependencies[] = guber_user_roles
+; dependencies[] = guber_user_permissions
+; dependencies[] = guber_views
+dependencies[] = guber_benners
 
 
 

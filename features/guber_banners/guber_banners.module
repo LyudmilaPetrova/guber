@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Guber Banners feature.
+ */
+
+include_once 'guber_banners.features.inc';
