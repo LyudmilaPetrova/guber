@@ -12,6 +12,9 @@
  * @see system_install()
  */
 function guber_install() {
+  
+  _guber_install_locales();
+  
   $inc_path = DRUPAL_ROOT . '/profiles/guber/config/';
   
   include_once $inc_path . 'text_formats.inc.php';
@@ -33,6 +36,25 @@ function guber_install() {
   _users_config();
   
 }
+
+function _guber_install_locales() {
+  include_once DRUPAL_ROOT . '/includes/locale.inc';
+  include_once DRUPAL_ROOT . '/includes/iso.inc';
+  
+  $predefined = _locale_get_predefined_list();
+  foreach (array('ru') as $install_locale) {
+    if (!isset($predefined[$install_locale])) {
+      // Drupal does not know about this language, so we prefill its values with
+      // our best guess. The user will be able to edit afterwards.
+      locale_add_language($install_locale, $install_locale, $install_locale, LANGUAGE_LTR, '', '', TRUE, FALSE);
+    }
+    else {
+      // A known predefined language, details will be filled in properly.
+      locale_add_language($install_locale, NULL, NULL, NULL, '', '', TRUE, FALSE);
+    }
+  }
+}
+
 
 //include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install';
 //  minimal_install();
