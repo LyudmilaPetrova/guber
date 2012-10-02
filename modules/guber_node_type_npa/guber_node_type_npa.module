@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Guber node type npa feature.
+ */
+
+include_once 'guber_node_type_npa.features.inc';

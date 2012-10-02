@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Guber node type news feature.
+ */
+
+include_once 'guber_node_type_news.features.inc';

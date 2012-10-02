@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Guber node type page feature.
+ */
+
+include_once 'guber_node_type_page.features.inc';
