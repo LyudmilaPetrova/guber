@@ -156,17 +156,6 @@ function guber_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access toolbar.
-  $permissions['access toolbar'] = array(
-    'name' => 'access toolbar',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-      2 => 'redaktor',
-    ),
-    'module' => 'toolbar',
-  );
-
   // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
@@ -174,17 +163,6 @@ function guber_user_permissions_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: add media from remote sources.
-  $permissions['add media from remote sources'] = array(
-    'name' => 'add media from remote sources',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-      2 => 'redaktor',
-    ),
-    'module' => 'media_internet',
   );
 
   // Exported permission: administer actions.
@@ -222,15 +200,6 @@ function guber_user_permissions_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: administer features.
-  $permissions['administer features'] = array(
-    'name' => 'administer features',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'features',
   );
 
   // Exported permission: administer filters.
@@ -276,15 +245,6 @@ function guber_user_permissions_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'less',
-  );
-
-  // Exported permission: administer media.
-  $permissions['administer media'] = array(
-    'name' => 'administer media',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'media',
   );
 
   // Exported permission: administer menu.
@@ -419,15 +379,6 @@ function guber_user_permissions_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: administer taxonomy display.
-  $permissions['administer taxonomy display'] = array(
-    'name' => 'administer taxonomy display',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'taxonomy_display',
-  );
-
   // Exported permission: administer themes.
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
@@ -501,50 +452,6 @@ function guber_user_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: create auction content.
-  $permissions['create auction content'] = array(
-    'name' => 'create auction content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: create auction_lot content.
-  $permissions['create auction_lot content'] = array(
-    'name' => 'create auction_lot content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: create banner content.
-  $permissions['create banner content'] = array(
-    'name' => 'create banner content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: create document content.
-  $permissions['create document content'] = array(
-    'name' => 'create document content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: create news content.
-  $permissions['create news content'] = array(
-    'name' => 'create news content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: create page content.
-  $permissions['create page content'] = array(
-    'name' => 'create page content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: create url aliases.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -553,15 +460,6 @@ function guber_user_permissions_user_default_permissions() {
       1 => 'redaktor',
     ),
     'module' => 'path',
-  );
-
-  // Exported permission: create webform content.
-  $permissions['create webform content'] = array(
-    'name' => 'create webform content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: customize shortcut links.
@@ -584,112 +482,6 @@ function guber_user_permissions_user_default_permissions() {
     'module' => 'webform',
   );
 
-  // Exported permission: delete any auction content.
-  $permissions['delete any auction content'] = array(
-    'name' => 'delete any auction content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any auction_lot content.
-  $permissions['delete any auction_lot content'] = array(
-    'name' => 'delete any auction_lot content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any banner content.
-  $permissions['delete any banner content'] = array(
-    'name' => 'delete any banner content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any document content.
-  $permissions['delete any document content'] = array(
-    'name' => 'delete any document content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any news content.
-  $permissions['delete any news content'] = array(
-    'name' => 'delete any news content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any page content.
-  $permissions['delete any page content'] = array(
-    'name' => 'delete any page content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete any webform content.
-  $permissions['delete any webform content'] = array(
-    'name' => 'delete any webform content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own auction content.
-  $permissions['delete own auction content'] = array(
-    'name' => 'delete own auction content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own auction_lot content.
-  $permissions['delete own auction_lot content'] = array(
-    'name' => 'delete own auction_lot content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own banner content.
-  $permissions['delete own banner content'] = array(
-    'name' => 'delete own banner content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own document content.
-  $permissions['delete own document content'] = array(
-    'name' => 'delete own document content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own news content.
-  $permissions['delete own news content'] = array(
-    'name' => 'delete own news content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own page content.
-  $permissions['delete own page content'] = array(
-    'name' => 'delete own page content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own webform content.
-  $permissions['delete own webform content'] = array(
-    'name' => 'delete own webform content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: delete own webform submissions.
   $permissions['delete own webform submissions'] = array(
     'name' => 'delete own webform submissions',
@@ -710,36 +502,6 @@ function guber_user_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete terms in 1.
-  $permissions['delete terms in 1'] = array(
-    'name' => 'delete terms in 1',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: delete terms in 2.
-  $permissions['delete terms in 2'] = array(
-    'name' => 'delete terms in 2',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: delete terms in 3.
-  $permissions['delete terms in 3'] = array(
-    'name' => 'delete terms in 3',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: delete terms in 4.
-  $permissions['delete terms in 4'] = array(
-    'name' => 'delete terms in 4',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: edit all webform submissions.
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
@@ -749,70 +511,6 @@ function guber_user_permissions_user_default_permissions() {
       2 => 'redaktor',
     ),
     'module' => 'webform',
-  );
-
-  // Exported permission: edit any auction content.
-  $permissions['edit any auction content'] = array(
-    'name' => 'edit any auction content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any auction_lot content.
-  $permissions['edit any auction_lot content'] = array(
-    'name' => 'edit any auction_lot content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any banner content.
-  $permissions['edit any banner content'] = array(
-    'name' => 'edit any banner content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any document content.
-  $permissions['edit any document content'] = array(
-    'name' => 'edit any document content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any news content.
-  $permissions['edit any news content'] = array(
-    'name' => 'edit any news content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any page content.
-  $permissions['edit any page content'] = array(
-    'name' => 'edit any page content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit any webform content.
-  $permissions['edit any webform content'] = array(
-    'name' => 'edit any webform content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit media.
-  $permissions['edit media'] = array(
-    'name' => 'edit media',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-      2 => 'redaktor',
-    ),
-    'module' => 'media',
   );
 
   // Exported permission: edit metatags_quick.
@@ -826,27 +524,6 @@ function guber_user_permissions_user_default_permissions() {
     'module' => 'metatags_quick',
   );
 
-  // Exported permission: edit own auction content.
-  $permissions['edit own auction content'] = array(
-    'name' => 'edit own auction content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit own auction_lot content.
-  $permissions['edit own auction_lot content'] = array(
-    'name' => 'edit own auction_lot content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit own banner content.
-  $permissions['edit own banner content'] = array(
-    'name' => 'edit own banner content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: edit own comments.
   $permissions['edit own comments'] = array(
     'name' => 'edit own comments',
@@ -855,38 +532,6 @@ function guber_user_permissions_user_default_permissions() {
       1 => 'authenticated user',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: edit own document content.
-  $permissions['edit own document content'] = array(
-    'name' => 'edit own document content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit own news content.
-  $permissions['edit own news content'] = array(
-    'name' => 'edit own news content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit own page content.
-  $permissions['edit own page content'] = array(
-    'name' => 'edit own page content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit own webform content.
-  $permissions['edit own webform content'] = array(
-    'name' => 'edit own webform content',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: edit own webform submissions.
@@ -898,59 +543,6 @@ function guber_user_permissions_user_default_permissions() {
       2 => 'redaktor',
     ),
     'module' => 'webform',
-  );
-
-  // Exported permission: edit terms in 1.
-  $permissions['edit terms in 1'] = array(
-    'name' => 'edit terms in 1',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'redaktor',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 2.
-  $permissions['edit terms in 2'] = array(
-    'name' => 'edit terms in 2',
-    'roles' => array(
-      0 => 'redaktor',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 3.
-  $permissions['edit terms in 3'] = array(
-    'name' => 'edit terms in 3',
-    'roles' => array(
-      0 => 'redaktor',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 4.
-  $permissions['edit terms in 4'] = array(
-    'name' => 'edit terms in 4',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: import media.
-  $permissions['import media'] = array(
-    'name' => 'import media',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'media',
-  );
-
-  // Exported permission: manage features.
-  $permissions['manage features'] = array(
-    'name' => 'manage features',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'features',
   );
 
   // Exported permission: node-specific print configuration.
@@ -1082,7 +674,6 @@ function guber_user_permissions_user_default_permissions() {
     'module' => 'search',
   );
 
-
   // Exported permission: use text format codes.
   $permissions['use text format codes'] = array(
     'name' => 'use text format codes',
@@ -1123,19 +714,6 @@ function guber_user_permissions_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: view media.
-  $permissions['view media'] = array(
-    'name' => 'view media',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
-      3 => 'moderator',
-      4 => 'redaktor',
-    ),
-    'module' => 'media',
-  );
-
   // Exported permission: view own unpublished content.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
@@ -1156,17 +734,6 @@ function guber_user_permissions_user_default_permissions() {
       2 => 'redaktor',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: view the administration theme.
-  $permissions['view the administration theme'] = array(
-    'name' => 'view the administration theme',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-      2 => 'redaktor',
-    ),
-    'module' => 'system',
   );
 
   return $permissions;

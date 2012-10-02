@@ -32,29 +32,6 @@ function guber_image_styles_image_default_styles() {
     ),
   );
 
-  // Exported image style: gallery_thumb.
-  $styles['gallery_thumb'] = array(
-    'name' => 'gallery_thumb',
-    'effects' => array(
-      7 => array(
-        'label' => 'Aspect switcher',
-        'help' => 'Use different effects depending on whether the image is landscape of portrait shaped. This re-uses other preset definitions, and just chooses between them based on the rule.',
-        'effect callback' => 'canvasactions_aspect_image',
-        'dimensions callback' => 'canvasactions_aspect_dimensions',
-        'form callback' => 'canvasactions_aspect_form',
-        'summary theme' => 'canvasactions_aspect_summary',
-        'module' => 'imagecache_canvasactions',
-        'name' => 'canvasactions_aspect',
-        'data' => array(
-          'portrait' => 'w120x90portrait',
-          'landscape' => 'w120x90landscape',
-          'ratio_adjustment' => '1',
-        ),
-        'weight' => '1',
-      ),
-    ),
-  );
-
   // Exported image style: w1000.
   $styles['w1000'] = array(
     'name' => 'w1000',

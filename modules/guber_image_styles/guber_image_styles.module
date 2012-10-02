@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the guber_image_styles feature.
+ * Code for the Guber image styles feature.
  */
 
 include_once 'guber_image_styles.features.inc';

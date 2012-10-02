@@ -1,6 +1,8 @@
-name = guber_user_roles
+name = Guber user roles
 core = 7.x
 package = Features
+version = 7.x-1.0-beta1
+project = guber_user_roles
 dependencies[] = features
 features[features_api][] = api:1
 features[user_role][] = administrator

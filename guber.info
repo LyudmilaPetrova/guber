@@ -113,17 +113,32 @@ dependencies[] = strongarm
 ;dependencies[] = map
 
 ; Features
-; dependencies[] = guber_image_styles
-; dependencies[] = guber_text_formats
+
 ; dependencies[] = guber_content_types
-; dependencies[] = guber_user_roles
-; dependencies[] = guber_user_permissions
+
 ; dependencies[] = guber_views
 
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = defaultcontent
+
+dependencies[] = guber_image_styles
+dependencies[] = guber_text_formats
+
 dependencies[] = guber_banners
+dependencies[] = guber_node_type_page
+dependencies[] = guber_node_type_news
+dependencies[] = guber_node_type_npa
+
+dependencies[] = guber_user_roles
+dependencies[] = guber_user_permissions
+
+; Default content
+dependencies[] = guber_banners_default
+
+
+
+
 
 
 

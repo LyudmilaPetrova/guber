@@ -1,10 +1,11 @@
-name = guber_image_styles
+name = Guber image styles
 core = 7.x
 package = Features
+version = 7.x-1.0-beta1
+project = guber_image_styles
 dependencies[] = image
 features[features_api][] = api:1
 features[image][] = a4-portrait
-features[image][] = gallery_thumb
 features[image][] = w1000
 features[image][] = w120x90
 features[image][] = w120x90landscape

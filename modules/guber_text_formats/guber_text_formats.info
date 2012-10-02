@@ -1,13 +1,12 @@
-name = guber_text_formats
+name = Guber text formats
 core = 7.x
 package = Features
+version = 7.x-1.0-beta1
+project = guber_text_formats
 dependencies[] = features
 dependencies[] = filter
 dependencies[] = pathologic
-dependencies[] = php
 features[features_api][] = api:1
 features[filter][] = codes
 features[filter][] = filtered_html
 features[filter][] = full_html
-features[filter][] = php_code
-features[filter][] = plain_text

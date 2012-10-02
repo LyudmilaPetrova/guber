@@ -11,3 +11,10 @@ core = "7.x"
 project = "defaultcontent"
 datestamp = "1329500137"
 
+
+
+; Information added by drush on 2012-10-02
+version = "unknown"
+project = "guber"
+datestamp = "1349169788"
+

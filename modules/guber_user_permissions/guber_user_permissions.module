@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Guber user permissions feature.
  */
+
+include_once 'guber_user_permissions.features.inc';
