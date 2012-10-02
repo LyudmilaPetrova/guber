@@ -40,7 +40,7 @@ function guber_install() {
   _guber_create_front_page();
   
   // 403 & 404 pages
-  _guber_create_error_pages()
+  _guber_create_error_pages();
   
   
 }
