@@ -15,6 +15,7 @@ function guber_install() {
   
   _guber_install_locales();
   
+  
   $inc_path = DRUPAL_ROOT . '/profiles/guber/config/';
   
   include_once $inc_path . 'text_formats.inc.php';
@@ -35,6 +36,13 @@ function guber_install() {
   include_once $inc_path . 'users.inc.php';
   _users_config();
   
+  // create front page node
+  _guber_create_front_page();
+  
+  // 403 & 404 pages
+  _guber_create_error_pages()
+  
+  
 }
 
 function _guber_install_locales() {
@@ -46,13 +54,85 @@ function _guber_install_locales() {
     if (!isset($predefined[$install_locale])) {
       // Drupal does not know about this language, so we prefill its values with
       // our best guess. The user will be able to edit afterwards.
-      locale_add_language($install_locale, $install_locale, $install_locale, LANGUAGE_LTR, '', '', TRUE, FALSE);
+      locale_add_language($install_locale, $install_locale, $install_locale, LANGUAGE_LTR, '', '', TRUE, TRUE);
     }
     else {
       // A known predefined language, details will be filled in properly.
       locale_add_language($install_locale, NULL, NULL, NULL, '', '', TRUE, FALSE);
     }
   }
+}
+
+function _guber_create_front_page() {
+
+ $front_page =  array (
+      'title' => 'Главная страница',
+      'status' => '1',
+      'created' => '1241682763',
+      'promote' => '0',
+      'teaser' => '',
+      'body' => '',
+    );
+ 
+ $front_page_node = _node_page_save($front_page);
+ 
+ if($front_page_node) {
+   $nid = $front_page_node->nid;
+   
+   variable_set('site_frontpage', 'node/'.$nid);
+ }
+ 
+}
+
+function _guber_create_error_pages() {
+
+ $error_page =  array (
+      'title' => '404 - Страница на сайте не найдена',
+      'status' => '1',
+      'created' => '1241682763',
+      'promote' => '0',
+      'teaser' => '',
+      'body' => '<p>Ссылка, по которой Вы перешли, ссылается на страницу, которой нет. Мы рекомендуем Вам перейти на <a href="/">главную страницу сайта</a> и попробвать найти нужный материал.</p><p>Если Вы уверены, что в возникновении данной ошибки виноваты мы (например, Вы перешли по какой-либо ссылке внутри нашего сайта и попали сюда), напишите нам сообщение. И мы в кратчайшие сроки постараемся устранить ошибку.</p><p>Или воспользуйтесь формой поиска.</p>',
+    );
+ 
+ $node = _node_page_save($error_page);
+ 
+ if($node) {
+   $path = 'node/'.$node->nid;
+   variable_set('site_403', $path);
+   variable_set('site_404', $path);
+ }
+ 
+}
+
+function _node_page_save($n) {
+  $node = new stdClass;
+  $node->type = 'page';
+  node_object_prepare($node);
+   
+  $node->title = $n['title'];
+  
+  $node->created = $n['created'];
+  $node->date = date(DATE_ISO8601, $n['created']);
+  
+  $node->language = 'ru';
+  
+	$node->body = array(
+		LANGUAGE_NONE => array(
+			array(
+				'value' => $n['body'],
+				'summary' => $n['teaser'],
+				'format' => 'full_html',
+			),
+		),
+	);
+	
+
+	node_save($node);
+	if (!empty($node->nid))
+		return $node;
+	else
+		return false;
 }
 
 
